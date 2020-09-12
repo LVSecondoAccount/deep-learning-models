@@ -8,8 +8,8 @@ Code by github.com/keunwoochoi.
 - [Music-auto_tagging-keras](https://github.com/keunwoochoi/music-auto_tagging-keras)
 
 '''
-from __future__ import print_function
-from __future__ import absolute_import
+
+
 
 import numpy as np
 from keras import backend as K

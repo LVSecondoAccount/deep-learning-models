@@ -80,7 +80,7 @@ def decode_predictions(preds, top_n=5):
     assert len(preds.shape) == 2 and preds.shape[1] == 50
     results = []
     for pred in preds:
-        result = zip(TAGS, pred)
+        result = list(zip(TAGS, pred))
         result = sorted(result, key=lambda x: x[1], reverse=True)
         results.append(result[:top_n])
     return results
